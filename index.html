@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dosfo - Biology Cell Game</title>
+	<!--<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	storay
+	-->
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="layout.css">
+
+</head>
+<body style="margin-top:120px;">
+	<script src="jquery.min.js"></script>
+	<script src="bootstrap.min.js"></script>
+	<script src="interact.min.js"></script>
+	<script src="game.js"></script>
+
+	<button style="top:10px;right:10px;position:fixed;" class="btn btn-default" type="submit" onClick="history.go(0)" value="Refresh">Randomize</button>
+
+	<p style="position:fixed;margin-left:80px;margin-top:15px;font-weight:bold;font-size:16px;">Bank</p>
+	<div id="dropzone-bank" class="dropzone">
+		<div id="yes-drop-1" class="draggable drag-drop"> Cell membrane </div>
+		<div id="yes-drop-2" class="draggable drag-drop"> Centrosome </div>
+		<div id="yes-drop-3" class="draggable drag-drop"> Cytoplasm </div>
+		<div id="yes-drop-4" class="draggable drag-drop"> Golgi body </div>
+		<div id="yes-drop-5" class="draggable drag-drop"> Lysosome </div>
+		<div id="yes-drop-6" class="draggable drag-drop"> Mitochondrion </div>
+		<div id="yes-drop-7" class="draggable drag-drop"> Nuclear membrane </div>
+		<div id="yes-drop-8" class="draggable drag-drop"> Nucleolus </div>
+		<div id="yes-drop-9" class="draggable drag-drop"> Nucleus </div>
+		<div id="yes-drop-10" class="draggable drag-drop"> Ribosome </div>
+		<div id="yes-drop-11" class="draggable drag-drop"> Rough endoplasmic reticulum </div>
+		<div id="yes-drop-12" class="draggable drag-drop"> Smooth endoplasmic reticulum </div>
+		<div id="yes-drop-13" class="draggable drag-drop"> Vacuole </div>
+	</div>
+	<p style="position:fixed;margin-left:50px;margin-top:15px;font-weight:bold;font-size:16px;">Definition</p>
+	<div id="dropzone-one" class="dropzone"></div>
+
+	<div class="dropdown" style="top:10px;left:10px;position:fixed;">
+		<a id="dLabel" role="button" data-toggle="dropdown" class="btn btn-default" data-target="#" href="/page.html">
+			Key <span class="caret"></span>
+		</a>
+		<ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+			<li class="dropdown-submenu">
+				<a tabindex="-1" href="#">Cell membrane</a>
+				<ul class="dropdown-menu">
+					<li><p tabindex="-1" href="#">The thin layer of protein and fat that surrounds the cell. The cell membrane is semipermeable, allowing some substances to pass into the cell and blocking others.</p></li>
+				</ul>
+			</li>
+			<li class="dropdown-submenu">
+				<a tabindex="-1" href="#">Centrosome</a>
+				<ul class="dropdown-menu">
+					<li><p tabindex="-1" href="#">A small body located near the nucleus - it has a dense center and radiating tubules. The centrosomes is where microtubules are made. During cell division (mitosis), the centrosome divides and the two parts move to opposite sides of the dividing cell. The centriole is the dense center of the centrosome.</p></li>
+				</ul>
+			</li>
+			<li class="dropdown-submenu">
+				<a tabindex="-1" href="#">Cytoplasm</a>
+				<ul class="dropdown-menu">
+					<li><p tabindex="-1" href="#">The jellylike material outside the cell nucleus in which the organelles are located.</p></li>
+				</ul>
+			</li>
+			<li class="dropdown-submenu">
+				<a tabindex="-1" href="#">Golgi body</a>
+				<ul class="dropdown-menu">
+					<li><p tabindex="-1" href="#">A flattened, layered, sac-like organelle that looks like a stack of pancakes and is located near the nucleus. It produces the membranes that surround the lysosomes. The Golgi body packages proteins and carbohydrates into membrane-bound vesicles for 'export' from the cell.</p></li>
+				</ul>
+			</li>
+			<li class="dropdown-submenu">
+				<a tabindex="-1" href="#">Lysosome</a>
+				<ul class="dropdown-menu">
+					<li><p tabindex="-1" href="#">Round organelles surrounded by a membrane and containing digestive enzymes. This is where the digestion of cell nutrients takes place.</p></li>
+				</ul>
+			</li>
+			<li class="dropdown-submenu">
+				<a tabindex="-1" href="#">Mitochondrion</a>
+				<ul class="dropdown-menu">
+					<li><p tabindex="-1" href="#">Spherical to rod-shaped organelles with a double membrane. The inner membrane is infolded many times, forming a series of projections (called cristae). The mitochondrion converts the energy stored in glucose into ATP (adenosine triphosphate) for the cell.</p></li>
+				</ul>
+			</li>
+			<li class="dropdown-submenu">
+				<a tabindex="-1" href="#">Nuclear membrane</a>
+				<ul class="dropdown-menu">
+					<li><p tabindex="-1" href="#">The membrane that surrounds the nucleus.</p></li>
+				</ul>
+			</li>
+			<li class="dropdown-submenu">
+				<a tabindex="-1" href="#">Nucleolus</a>
+				<ul class="dropdown-menu">
+					<li><p tabindex="-1" href="#">An organelle within the nucleus - it is where ribosomal RNA is produced. Some cells have more than one nucleolus.</p></li>
+				</ul>
+			</li>
+			<li class="dropdown-submenu">
+				<a tabindex="-1" href="#">Nucleus</a>
+				<ul class="dropdown-menu">
+					<li><p tabindex="-1" href="#">Spherical body containing many organelles, including the nucleolus. The nucleus controls many of the functions of the cell (by controlling protein synthesis) and contains DNA (in chromosomes). The nucleus is surrounded by the nuclear membrane.</p></li>
+				</ul>
+			</li>
+			<li class="dropdown-submenu">
+				<a tabindex="-1" href="#">Ribosome</a>
+				<ul class="dropdown-menu">
+					<li><p tabindex="-1" href="#">Small organelles composed of RNA-rich cytoplasmic granules that are sites of protein synthesis.</p></li>
+				</ul>
+			</li>
+			<li class="dropdown-submenu">
+				<a tabindex="-1" href="#">Rough endoplasmic reticulum</a>
+				<ul class="dropdown-menu">
+					<li><p tabindex="-1" href="#">A vast system of interconnected, membranous, infolded and convoluted sacks that are located in the cell's cytoplasm (the ER is continuous with the outer nuclear membrane). Rough ER is covered with ribosomes that give it a rough appearance. Rough ER transports materials through the cell and produces proteins in sacks called cisternae (which are sent to the Golgi body, or inserted into the cell membrane).</p></li>
+				</ul>
+			</li>
+			<li class="dropdown-submenu">
+				<a tabindex="-1" href="#">Smooth endoplasmic reticulum</a>
+				<ul class="dropdown-menu">
+					<li><p tabindex="-1" href="#">A vast system of interconnected, membranous, infolded and convoluted tubes that are located in the cell's cytoplasm (the ER is continuous with the outer nuclear membrane). The space within the ER is called the ER lumen. Smooth ER transports materials through the cell. It contains enzymes and produces and digests lipids (fats) and membrane proteins; smooth ER buds off from rough ER, moving the newly-made proteins and lipids to the Golgi body, lysosomes, and membranes.</p></li>
+				</ul>
+			</li>
+			<li class="dropdown-submenu">
+				<a tabindex="-1" href="#">Vacuole</a>
+				<ul class="dropdown-menu">
+					<li><p tabindex="-1" href="#">Fluid-filled, membrane-surrounded cavities inside a cell. The vacuole fills with food being digested and waste material that is on its way out of the cell.</p></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+</body>
+</html>
