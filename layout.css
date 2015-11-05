@@ -11,7 +11,10 @@
   border: dashed 4px transparent;
   border-radius: 4px;
   margin: 10px auto 30px;
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   width: 80%;
   transition: background-color 0.3s;
 }
@@ -63,7 +66,7 @@
 
 .dropdown-submenu:hover>.dropdown-menu {
     display: block;
-    font-size:11px;
+    font-size:12px;
 }
 
 .dropdown-submenu>p:after {
@@ -72,7 +75,7 @@
     float: right;
     width: 0;
     height: 0;
-    font-size:11px;
+    font-size:12px;
     border-color: transparent;
     border-style: solid;
     border-width: 5px 0 5px 5px;
